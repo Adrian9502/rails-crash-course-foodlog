@@ -23,3 +23,4 @@ Things you may want to cover:
 
 * ...
 # rails-crash-course-foodlog
+# rails-crash-course-foodlog
