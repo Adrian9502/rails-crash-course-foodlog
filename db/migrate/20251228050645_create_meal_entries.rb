@@ -1,7 +1,7 @@
-class CreateEntries < ActiveRecord::Migration[8.1]
+class CreateMealEntries < ActiveRecord::Migration[8.1]
   def change
-    create_table :entries do |t|
-      t.string :meal_type
+    create_table :meal_entries do |t|
+      t.string :mean_type
       t.integer :calories
       t.integer :proteins
       t.integer :carbohydrates

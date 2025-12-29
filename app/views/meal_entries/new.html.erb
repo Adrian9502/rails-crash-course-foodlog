@@ -1,0 +1,23 @@
+<% content_for :title, "New meal entry" %>
+
+<div class="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 py-8 px-4">
+  <div class="max-w-2xl mx-auto">
+    <%# Header %>
+    <div class="mb-6">
+      <%= link_to meal_entries_path, class: "inline-flex items-center text-indigo-600 hover:text-indigo-800 font-medium mb-4" do %>
+        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
+        </svg>
+        Back to meal entries
+      <% end %>
+      
+      <h1 class="text-4xl font-bold text-gray-800 mb-2">Add New Meal</h1>
+      <p class="text-gray-600">Track your nutrition by adding meal details below</p>
+    </div>
+
+    <%# Form Container %>
+    <div class="bg-white rounded-xl shadow-lg p-8">
+      <%= render "form", meal_entry: @meal_entry %>
+    </div>
+  </div>
+</div>

@@ -12,6 +12,9 @@ Rails.application.configure do
   # Show full error reports.
   config.consider_all_requests_local = true
 
+  # hot reload
+  config.hotwire_livereload.listen_paths << Rails.root.join("app/assets/stylesheets")
+
   # Enable server timing.
   config.server_timing = true
 
